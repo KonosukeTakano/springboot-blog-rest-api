@@ -22,7 +22,7 @@ public class PostServiceImpl implements PostService {
 
     private ModelMapper mapper;
 
-    public PostServiceImpl(PostRepository postRepositorym, ModelMapper mapper)
+    public PostServiceImpl(PostRepository postRepository, ModelMapper mapper)
     {
         this.postRepository = postRepository;
         this.mapper = mapper;
