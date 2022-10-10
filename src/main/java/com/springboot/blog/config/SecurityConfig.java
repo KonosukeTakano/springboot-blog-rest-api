@@ -42,14 +42,14 @@ public class SecurityConfig {
         return http.build();
     }
 
-    @Bean
-    protected UserDetailsService userDetailsService(){
-        UserDetails kouko = User.builder().username("kouko").password(passwordEncoder()
-                .encode("password")).roles("USER").build();
-        UserDetails admin = User.builder().username("admin").password(passwordEncoder()
-                .encode("admin")).roles("ADMIN").build();
-        return new InMemoryUserDetailsManager(kouko, admin);
-    }
+//    @Bean
+//    protected UserDetailsService userDetailsService(){
+//        UserDetails kouko = User.builder().username("kouko").password(passwordEncoder()
+//                .encode("password")).roles("USER").build();
+//        UserDetails admin = User.builder().username("admin").password(passwordEncoder()
+//                .encode("admin")).roles("ADMIN").build();
+//        return new InMemoryUserDetailsManager(kouko, admin);
+//    }
 
 
 }
